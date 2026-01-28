@@ -9,6 +9,8 @@ const { frontmatter } = Astro.props;
     <h3>{frontmatter.description}</h3>
     <p>Written by {frontmatter.author}</p>
     <p>Publish Date: {frontmatter.pubDate.toString().slice(0, 10)}</p>
-    <p>Tags: {frontmatter.tags}</p>
+    <p>
+        tags: {frontmatter.tags.map((tag: any) => <span>["{tag}"], </span>)}
+    </p>
     <slot />
 </BaseLayout>
