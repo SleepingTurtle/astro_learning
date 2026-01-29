@@ -94,6 +94,10 @@ h1 {
     }
 
     .dark a {
-        color: #ff9776;
+        color: #2431f0;
+    }
+
+    .dark .socials {
+        background-color: #f0e924;
     }
 }
